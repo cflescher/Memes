@@ -10,6 +10,10 @@ enum CaptionPosition {
     case bottom
 }
 
+/// This is to be initialized with two set values, `type: CaptionOption.CaptionType` and
+/// `position: CaptionPosition`, which are both enums.
+/// The `emote` and `caption` properties are *computed properties,* meaning they are calculated
+/// automatically based on the type and position values.
 struct CaptionOption {
     enum CaptionType {
         case one
@@ -20,7 +24,7 @@ struct CaptionOption {
     
     var position: CaptionPosition
     
-    //MARK: emotes
+    //MARK: computed properties
     ///Don't use. Use `emote` instead.
     var topEmote: String {
         switch type {
@@ -54,7 +58,6 @@ struct CaptionOption {
         }
     }
         
-    //MARK: captions
     ///Don't use. Use `caption` instead.
     var topCaption: String {
         switch type {
