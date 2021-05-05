@@ -28,7 +28,7 @@
                                     <segment title="Second"/>
                                 </segments>
                                 <connections>
-                                    <action selector="topCaptionControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="eVQ-mU-ulT"/>
+                                    <action selector="topCaptionControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="rnn-NT-cZe"/>
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dpH-hu-W7h">
@@ -38,6 +38,9 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="bottomCaptionControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="1ai-Zc-3Tl"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="7oO-Ix-oEG">
                                 <rect key="frame" x="103" y="322" width="208" height="41"/>
