@@ -25,7 +25,7 @@ struct CaptionOption {
     var position: CaptionPosition
     
     //MARK: computed properties
-    ///Don't use. Use `emote` instead.
+    ///Do not access directly. Use `emote` instead.
     var topEmote: String {
         switch type {
             case .one:
@@ -37,7 +37,7 @@ struct CaptionOption {
         }
     }
     
-    ///Don't use. Use `emote` instead.
+    ///Do not access directly. Use `emote` instead.
     var bottomEmote: String {
         switch type {
             case .one:
@@ -58,7 +58,7 @@ struct CaptionOption {
         }
     }
         
-    ///Don't use. Use `caption` instead.
+    ///Do not access directly. Use `caption` instead.
     var topCaption: String {
         switch type {
             case .one:
@@ -71,7 +71,7 @@ struct CaptionOption {
     }
 
 
-    ///Don't use. Use `caption` instead.
+    ///Do not access directly. Use `caption` instead.
     var bottomCaption: String {
         switch type {
             case .one:
